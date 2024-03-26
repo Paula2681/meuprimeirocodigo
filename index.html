@@ -1,11 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
-    <title>meu primeiro codigo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulário de Contratação</title>
+
 </head>
+
 <body>
-    <h1>Esta é a minha primeira página HTML que construí utilizando VSCode</h1>
+    <section>
+        <h1>Formulário para contratação de professores</h1>
+    
+    <p>
+        Olá professor (a)! Preencha os campos para se candidatar a vaga.
+        <br>
+        Atenção aos campos obrigatórios.
+    </p>
+
+    <div class="wrapper">
+        <form id="form" name="form">
+            <label for="name">Nome Completo:</label>
+            <input type="text" placeholder="Digite seu nome" required/>
+
+            <p>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" placeholder="Digite seu e-mail" required/>
+            </p>
+
+            <p>
+                <label for="idade">Idade:</label>
+                <input type="text" placeholder="Digite sua idade" required>
+            </p>
+
+            <p>
+                
+            </p>
+            <label for="subject">Para qual matéria você está se candidatando para lecionar:</label>
+            <select type="text" name="subject">
+                <option value="math">Matemática</option>
+                <option value="portuguese">Português</option>
+                <option value="biology">Biologia</option>
+                <option value="science">Ciências</option>
+                <option value="history">História</option>
+                <option value="geography">Geografia</option>
+                <option value="arts">Artes</option>
+              </select>
+               
+
+            <p>
+                <h2>Para qual turno tem disponibilidade?</h2>
+            </p>
+
+            <p>
+                <input type="checkbox" id="manhã" name="availableShifts" value="manhã"/>
+                <label for="manhã">Manhã</label>
+            </p>
+
+            <p>
+                <input type="checkbox" id="tarde" name="availableShifts" value="tarde"/>
+                <label for="tarde">Tarde</label>
+            </p>
+
+            <p>
+                <input type="checkbox" id="noite" name="availableShifts" value="noite"/>
+                <label for="noite">Noite</label>
+            </p>
+
+            <p>
+                <h2>Qual seu nível de escolaridade?</h2>
+            </p>
+
+            <div class="radio-inputs-wrapper">
+                <label for="graduated">
+                  <input type="radio" name="schooling" id="graduated" value="graduated" />
+                  Ensino Superior completo
+                </label>
+                <label for="studyingMasters">
+                  <input type="radio" name="schooling" id="studyingMasters" value="studyingMasters" />
+                  Cursando mestrado
+                </label>
+                <label for="mastersDegreeComplete">
+                  <input type="radio" name="schooling" id="mastersDegreeComplete" value="mastersDegreeComplete" />
+                  Mestrado completo
+                </label>
+                <label for="studyingDoctorate">
+                  <input type="radio" name="schooling" id="studyingDoctorate" value="studyingDoctorate" />
+                  Cursando doutorado
+                </label>
+                <label for="doctorateDegreeComplete">
+                  <input type="radio" name="schooling" id="doctorateDegreeComplete" value="doctorateDegreeComplete" />
+                  Doutorado completo
+                </label>
+              </div>
+
+            <p>
+                <label>Breve descrição sobre si mesmo:</label>
+                <textarea id="description" name="description" placeholder="Máximo 200 caracteres"></textarea>
+            </p>
+
+            <p>
+                <label for="cv">Adicione seu currículo</label>
+                <input type="file" name="cv" accept="application/pdf">
+            </p>
+
+            <footer>
+                <button class="submit-button">Enviar</button>
+            </footer>
+        </form>
+    </div>
+    </section>
+
+    
 </body>
 </html>
